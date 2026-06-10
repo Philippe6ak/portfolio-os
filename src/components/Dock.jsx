@@ -51,7 +51,13 @@ function Dock() {
 
     dock.addEventListener("mousemove", handleMouseMove);
     dock.addEventListener("mouseleave", resetIcons);
-  }, []);
+
+    return () => {
+      dock.removeEventListener("mousemove", handleMouseMove);
+      dock.removeEventListener("mouseleave", resetIcons);
+      gsap.killTweensOf(icons);
+    };
+  });
 
   function toggleApp({ id, canOpen }) {
     //TODO: Implement app opening logic here
