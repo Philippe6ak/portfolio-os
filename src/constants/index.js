@@ -106,7 +106,7 @@ const techStack = [
   },
   {
     category: "Mobile",
-    items: ["React Native", "Expo"],
+    items: ["React Native"],
   },
   {
     category: "Styling",
@@ -114,7 +114,7 @@ const techStack = [
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "NestJS", "Hono"],
+    items: ["Not yet :')"],
   },
   {
     category: "Database",
@@ -122,7 +122,7 @@ const techStack = [
   },
   {
     category: "Dev Tools",
-    items: ["Git", "GitHub", "Docker"],
+    items: ["Git", "GitHub", "VS Code"],
   },
 ];
 
