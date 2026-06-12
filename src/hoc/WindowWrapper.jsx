@@ -32,7 +32,7 @@ function WindowWrapper(Component, windowKey) {
       });
 
       return () => instance.kill();
-    }, []);
+    }, [isOpen, windowKey, focusWindow]);
 
     useLayoutEffect(() => {
       const el = ref.current;

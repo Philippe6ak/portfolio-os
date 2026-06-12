@@ -115,7 +115,19 @@ body {
   }
 
   #window-header {
-    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400;
+    @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-50 border-b border-gray-200 select-none text-sm text-gray-400 cursor-default;
+  }
+
+  /* Draggable window sections */
+  #safari,
+  #terminal,
+  #contact,
+  #photos,
+  #resume,
+  #finder,
+  #txtfile,
+  #imgfile {
+    @apply cursor-default;
   }
 
   #safari {
@@ -131,6 +143,7 @@ body {
 
     .blog {
       @apply bg-white p-10 max-w-3xl mx-auto;
+      cursor: default;
 
       h2 {
         @apply text-xl font-bold text-pink-600 mb-10;
